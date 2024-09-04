@@ -1,0 +1,430 @@
+/* start global  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(233, 233, 233);
+}
+
+.address{
+    background-color: black;
+    color: #ffffff;
+}
+
+
+.plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.plans button{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.col-md-8{
+background-image: url("/images/6cyo8XMri.png");
+background-position: center center;
+/* height: 700px; */
+}
+.player-name{
+    color: black;
+}
+
+
+p{
+    margin-top: -20px;
+}
+
+/* squad  */
+#squad,
+#squad_2,
+#squad_3,
+#squad_4,
+#squad_5,
+#squad_6,
+#squad_7,
+#squad_8{
+    width: 30%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 5px 30px -10px black;
+    padding: 20px 10px;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+/* squad  */
+
+
+
+
+
+/* Goal Keeper */
+#squad #mainPlayerImageContainer .goalkeeper,
+#squad_2 #mainPlayerImageContainer .goalkeeper,
+#squad_3 #mainPlayerImageContainer .goalkeeper,
+#squad_4 #mainPlayerImageContainer .goalkeeper,
+#squad_5 #mainPlayerImageContainer .goalkeeper,
+#squad_6 #mainPlayerImageContainer .goalkeeper,
+#squad_7 #mainPlayerImageContainer .goalkeeper,
+#squad_8 #mainPlayerImageContainer .goalkeeper
+{
+    margin-top: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+/* Goal Keeper */
+
+
+
+
+
+/* attacker */
+#squad #mainPlayerImageContainer .attacker,
+#squad_2 #mainPlayerImageContainer .attacker, 
+#squad_3 #mainPlayerImageContainer .attacker, 
+#squad_4 #mainPlayerImageContainer .attacker, 
+#squad_5 #mainPlayerImageContainer .attacker, 
+#squad_6 #mainPlayerImageContainer .attacker, 
+#squad_7 #mainPlayerImageContainer .attacker, 
+#squad_8 #mainPlayerImageContainer .attacker 
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+/* attacker */
+
+
+
+
+
+/* index , plan_two page  */
+
+#squad #mainPlayerImageContainer .midfield,
+#squad_2 #mainPlayerImageContainer .midfield {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#squad #mainPlayerImageContainer .defender,
+#squad_2 #mainPlayerImageContainer .defender {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* index , plan_two page  */
+
+
+
+
+/* plan_three page */
+#squad_3 #mainPlayerImageContainer .playmaker,
+#squad_5 #mainPlayerImageContainer .playmaker,
+#squad_6 #mainPlayerImageContainer .playmaker
+{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+#squad_3 #mainPlayerImageContainer .midfield{
+    margin-top: 25px;
+    display: flex;
+    justify-content:center;
+}
+#squad_3 #mainPlayerImageContainer .defender{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+/* plan_three page */
+
+
+
+/* plan_four page */
+#squad_4 #mainPlayerImageContainer .midfield{
+    display: flex;
+    justify-content:center;
+    width: 70%;
+    margin: 50px auto;
+}
+#squad_4 #mainPlayerImageContainer .defender{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+/* plan_four page */
+
+
+
+
+/* plan_five page */
+#squad_5 #mainPlayerImageContainer .midfield{
+    margin-top: 25px;
+    display: flex;
+    justify-content:center;
+    /* text-align: center; */
+}
+#squad_5 #mainPlayerImageContainer .defender{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+/* plan_five page */
+
+
+
+/* plan_six page */
+#squad_6 #mainPlayerImageContainer .midfield{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#squad_6 #mainPlayerImageContainer .defender{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+/* plan_six page */
+
+
+
+/* plan_seven page */
+#squad_7 #mainPlayerImageContainer .midfield{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#squad_7 #mainPlayerImageContainer .defender{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+/* plan_seven page */
+
+
+
+/* plan_eight page */
+#squad_8 #mainPlayerImageContainer .midfield{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#squad_8 #mainPlayerImageContainer .defender{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+/* plan_eight page */
+
+
+
+
+.player img{
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    transition: 0.5s ease;
+}
+.player img:hover{
+    transform: scale(0.9);
+}
+
+.modal .modal-body .options-players {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.modal .modal-body .options-players .player-option{
+    margin-bottom: 10px;
+}
+.modal .modal-body .options-players  img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.options-players img.selected {
+    border: 4px solid rgb(15, 157, 2);
+}
+
+
+
+
+
+/* media Query  */
+@media only screen and (max-width: 1140px) {
+    .plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+    #squad,
+    #squad_2,
+    #squad_3,
+    #squad_4,
+    #squad_5,
+    #squad_6,
+    #squad_7,
+    #squad_8
+    {
+        width: 80%;
+        
+    }
+
+}
+@media only screen and (max-width: 990px) {
+    .plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+    #squad,
+    #squad_2,
+    #squad_3,
+    #squad_4,
+    #squad_5,
+    #squad_6,
+    #squad_7,
+    #squad_8
+    {
+        width: 100%;
+        
+    }
+    
+
+}
+@media only screen and (max-width: 768px) {
+    .plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+    #squad,
+    #squad_2,
+    #squad_3,
+    #squad_4,
+    #squad_5,
+    #squad_6,
+    #squad_7,
+    #squad_8{
+        width: 100%;
+        
+    }
+    
+    .player img{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+    #squad,
+    #squad_2,
+    #squad_3,
+    #squad_4,
+    #squad_5,
+    #squad_6,
+    #squad_7,
+    #squad_8{
+        width: 100%;
+        
+    }
+    
+    .player img{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 480px) {
+.plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+    #squad,
+    #squad_2,
+    #squad_3,
+    #squad_4,
+    #squad_5,
+    #squad_6,
+    #squad_7,
+    #squad_8{
+        width: 100%;
+    }
+    
+    .player img{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+    #squad,
+    #squad_2,
+    #squad_3,
+    #squad_4,
+    #squad_5,
+    #squad_6,
+    #squad_7,
+    #squad_8{
+        width: 100%;
+        
+    }
+    
+    .player img{
+        width: 60px;
+        height: 60px;
+    }
+}
+/* media Query  */
+
+
+
+
+
+
